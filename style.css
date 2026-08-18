@@ -1,0 +1,40 @@
+body{
+background: linear-gradient(135deg, #d31027, #ea384d);
+}
+
+#content{
+    width: 1200px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.162);
+    position: absolute;
+    left: 160px;
+    top: 50px;
+}
+
+#information{
+    width: 1000px;
+     height: 200px; 
+    background-color: blue;
+    position: relative;
+    border-radius: 8px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+#name{
+    text-align: center;
+    color: white;
+}
+
+
+#operation{
+    width: 1000px;
+     height: 270px; 
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
