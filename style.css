@@ -27,14 +27,80 @@ background: linear-gradient(135deg, #d31027, #ea384d);
     color: white;
 }
 
-
 #operation{
     width: 1000px;
      height: 270px; 
-    background-color: white;
+    background-color: rgb(13, 0, 255);
     position: relative;
     border-radius: 8px;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%); 
+}
+
+#num1{
+   width: 100px;
+   height: 100px; 
+   font-size: 50px;
+   color:black;
+   left: 15%;
+   position: relative;
+   margin-top: 10px;
+   text-align: center;
+}
+
+#num2{
+   width: 100px;
+   height: 100px; 
+   font-size: 50px;
+   color:black;
+   left: 4%;
+   position: relative;
+   margin-top: 10px;
+   top: 45%;
+   text-align: center;
+}
+
+#operacion{
+   width: 140px;
+   height: 100px; 
+   font-size: 50px;
+   color:black;
+   left: 8%;
+   position: relative;
+   margin-top: 10px;
+   top: 25%;
+   text-align: center;
+}
+
+#num3{
+     width: 100px;
+   height: 100px; 
+   font-size: 50px;
+   color:black;
+   left: 12%;
+   position: relative;
+   margin-top: 10px;
+   top: 45%;
+   text-align: center;
+}
+
+#num4{
+     width: 100px;
+   height: 100px; 
+   font-size: 50px;
+   color:black;
+   left: 1%;
+   position: relative;
+   margin-top: 10px;
+   top: 1%;
+   text-align: center;
+}
+
+#result{
+    width: 1000px;
+    height: 500px;
+    right: -70%;
+    bottom: 25px;
+    position: relative;
 }
