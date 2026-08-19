@@ -10,7 +10,8 @@ function Operation(){
     let denoResultado;
     
     if(numerador1==="" ||numerador2===""   ||denominador1===""  ||denominador2===""){
-        alert("TE HACEN FALTA DATEITON PARA PODER REALIZAR LAS FRACCIONES"); 
+        alert("HACE FALTA NUMEROS PARA REALIZAR LA FRACCION"); 
+    
     } 
     if(denominador1=== 0 ||denominador2=== 0){
         alert("Las fracciones no se pueden hacer con los denominadores siendo igual a 0"); 
