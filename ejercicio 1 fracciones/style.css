@@ -53,7 +53,7 @@ background: linear-gradient(135deg, #d31027, #ea384d);
    width: 100px;
    height: 100px; 
    font-size: 50px;
-   color:rgb(253, 10, 10);
+   color:rgb(4, 4, 4);
    left: 4%;
    position: relative;
    margin-top: 10px;
@@ -105,17 +105,16 @@ background: linear-gradient(135deg, #d31027, #ea384d);
     position: relative;
 }
 
-#result1{
-    bottom: 670px;
+#equal{
+    bottom: 600px;
+    left: 850px;
     position: relative;
-    left: 85%;
-    font-size: 100px;
-
 }
 
-#result2{
-      bottom: 1060px;
+#boton1{
+    width: 120px;
+    height: 60px;
+     bottom: 450px;
+    left: 650px;
     position: relative;
-    left: 85%;
-    font-size: 100px;
 }

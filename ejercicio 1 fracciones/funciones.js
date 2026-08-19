@@ -1,9 +1,9 @@
-function Calculate(){
+function Operation(){
     let numerador1 = document.getElementById("num1").value;
     let numerador2 = document.getElementById("num2").value;
     let denominador1 = document.getElementById("deno1").value;
     let denominador2 = document.getElementById("deno2").value;
-    let operaciones = document.getElementById("operation").value; 
+    let operaciones = document.getElementById("operacion").value; 
 
  
     let numResultado;
@@ -22,7 +22,7 @@ function Calculate(){
         (numerador1 * denominador2) + (numerador2 * denominador1); 
 
         // lo que se va mostrar en el resultado del denominador 
-        denResultado =
+        denoResultado =
         (denominador1 * denominador2);
     }
     else if(operaciones === "resta"){
@@ -32,24 +32,24 @@ function Calculate(){
         (numerador1 * denominador2) - (numerador2 * denominador1);
 
         // lo que se va mostrar en el resultado del denominador 
-        denResultado =
+        denoResultado =
         (denominador1 * denominador2);
     }
-    else if(operaciones === "multiplicación"){
+    else if(operaciones === "multiplicacion"){
         numResultado =
         (numerador1 * numerador2);
-        denResultado =
+        denoResultado =
         (denominador1 * denominador2);
     }
-    else if(operaciones === "división"){
+    else if(operaciones === "division"){
          numResultado =
         (numerador1 * denominador2);
-        denResultado =
+        denoResultado =
         (numerador2 * denominador1);
     }
     document.getElementById("equal").innerHTML = 
     ` 
     <nav> ${numResultado}</nav>
     ------
-    <nav>  ${denResultado}</nav>`
+    <nav>  ${denoResultado}</nav>`
 }
