@@ -1,69 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Actividades de Java</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Ejercicios | Andrés Felipe Romero Barrera</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="encabezado">
-        <h1>Mis Actividades de Java</h1>
-        <p>Trabajos prácticos y video explicativo</p>
-    </header>
+  <!-- PANTALLA COMPLETA DE BIENVENIDA -->
+  <header class="bienvenida-full">
+    <div class="overlay"></div>
 
-    <main class="contenedor-principal">
+    <div class="contenido-bienvenida">
+      <span class="subtitulo">Portafolio de Desarrollo Web</span>
+      <h1>Andrés Felipe Romero Barrera</h1>
+      <p>Muestrario de actividades, talleres y prácticas desarrolladas con HTML, CSS y JS.</p>
+      
+      <a href="#ejercicios" class="btn-scroll">Ver Ejercicios ↓</a>
+    </div>
+  </header>
 
-        <!-- ACTIVIDAD 1 -->
-        <section class="tarjeta">
-            <h2>Actividad 1</h2>
-            <p>Escribe aquí la descripción de tu primera actividad en Java.</p>
-            
-            <div class="caja-codigo">
-                <!-- Puedes cambiar esto por <textarea> si quieres escribir código libremente -->
-                <pre><code>// Pega tu código de Java 1 aquí
-public class Actividad1 {
-    public static void main(String[] args) {
-        System.out.println("Hola mundo 1");
-    }
-}</code></pre>
+  <!-- CONTENEDOR PRINCIPAL DE EJERCICIOS -->
+  <main id="ejercicios" class="contenedor-principal">
+
+    <!-- SECCIÓN: EJERCICIO 1 (OPERACIONES CON FRACCIONARIOS) -->
+    <section class="tarjeta-ejercicio">
+      <header class="ejercicio-header">
+        <span class="badge">Ejercicio #01</span>
+        <h2>Operaciones con Fraccionarios</h2>
+      </header>
+      
+      <div class="ejercicio-cuerpo">
+        
+        <div id="content-fracciones">
+          <div id="information-fracciones">
+            <h2 id="name-fracciones">Operaciones con Fraccionarios</h2>
+          </div>
+
+          <div id="operation-fracciones">
+            <div class="fraccion-inputs">
+              <div class="bloque-fraccion">
+                <input type="number" id="num1" placeholder="Num 1">
+                <hr>
+                <input type="number" id="deno1" placeholder="Den 1">
+              </div>
+
+              <select id="operacion">
+                <option value="suma">+</option>
+                <option value="resta">-</option>
+                <option value="multiplicacion">x</option>
+                <option value="division">÷</option>
+              </select>
+
+              <div class="bloque-fraccion">
+                <input type="number" id="num2" placeholder="Num 2">
+                <hr>
+                <input type="number" id="deno2" placeholder="Den 2">
+              </div>
+
+              <h1 id="result-signo">=</h1>
+
+              <div id="equal">
+                <h2>0</h2>
+              </div>
             </div>
-        </section>
 
-        <!-- ACTIVIDAD 2 -->
-        <section class="tarjeta">
-            <h2>Actividad 2</h2>
-            <p>Escribe aquí la descripción de tu segunda actividad en Java.</p>
-            
-            <div class="caja-codigo">
-                <pre><code>// Pega tu código de Java 2 aquí
-public class Actividad2 {
-    public static void main(String[] args) {
-        System.out.println("Hola mundo 2");
-    }
-}</code></pre>
+            <button id="boton1" onclick="Operation()" class="btn btn-warning fw-bold">Calcular</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN: EJERCICIO 2 (JUEGO DE ECUACIONES) -->
+    <section class="tarjeta-ejercicio">
+      <header class="ejercicio-header">
+        <span class="badge">Ejercicio #02</span>
+        <h2>Juego de Ecuaciones de Primer Grado</h2>
+      </header>
+
+      <div class="ejercicio-cuerpo">
+        
+        <div class="header-ejercicio1">
+          <h2 id="Text">Actividad #2 Andrés Felipe Romero Barrera</h2>
+        </div>
+
+        <div class="container-primary">
+          <nav class="ecuation0">
+            <footer class="ecuation">
+              <h2 id="operation"></h2>
+            </footer>
+          </nav>
+
+          <div class="resultado">
+            <button class="result btn btn-dark" type="button">
+              <h2>A</h2>
+            </button>
+            <button class="result btn btn-dark" type="button">
+              <h2>B</h2>
+            </button>
+            <button class="result btn btn-dark" type="button">
+              <h2>C</h2>
+            </button>
+          </div>
+
+          <div class="resultado1">
+            <div class="result1">
+              <h2>00</h2>
             </div>
-        </section>
-
-        <!-- SECCIÓN DE VIDEO LOCAL -->
-        <section class="tarjeta">
-            <h2>Video Explicativo</h2>
-            <p>Reproducción del video local sobre las actividades.</p>
-            
-            <div class="contenedor-video">
-                <!-- Cambia "mi_video.mp4" por la ruta o nombre de tu archivo de video local -->
-                <video src="mi_video.mp4" controls width="100%">
-                    Tu navegador no soporta la reproducción de videos.
-                </video>
+            <div class="result1">
+              <h2>00</h2>
             </div>
-        </section>
+            <div class="result1">
+              <h2>00</h2>
+            </div>
+          </div>
 
-    </main>
+          <div class="footer1">
+            <h2>TIMER: <br>0:00</h2>
+          </div>
+        </div>
 
-    <footer class="pie-pagina">
-        <p>Derechos reservados &copy; 2026</p>
-    </footer>
+      </div>
+    </section>
 
+    <!-- SECCIÓN: EJERCICIO 3 (VIDEO) -->
+    <section class="tarjeta-ejercicio">
+      <header class="ejercicio-header">
+        <span class="badge">Ejercicio #03</span>
+        <h2>Ejercicio con Video</h2>
+      </header>
+
+      <div class="ejercicio-cuerpo">
+        <div class="contenedor-video">
+          <iframe 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="Video del Ejercicio" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="funciones.js"></script>
 </body>
 </html>

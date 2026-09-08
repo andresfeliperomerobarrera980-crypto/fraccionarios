@@ -1,83 +1,347 @@
-/* Estilos generales y sencillos */
+/* RESETEO BÁSICO Y GENERALES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-    margin: 0;
-    padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.8;
 }
 
-/* Encabezado */
-.encabezado {
-    text-align: center;
-    margin-bottom: 40px;
+/* BIENVENIDA A PANTALLA COMPLETA */
+.bienvenida-full {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  background-image: url('https://i.pinimg.com/736x/0a/65/14/0a6514b4e0bca46d5d92ed943190133e.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.encabezado h1 {
-    color: #007396;
-    margin-bottom: 5px;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  z-index: 1;
 }
 
-/* Contenedor principal que organiza todo hacia abajo */
+.contenido-bienvenida {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.subtitulo {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #60a5fa;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.contenido-bienvenida h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.contenido-bienvenida p {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  margin-bottom: 35px;
+}
+
+.btn-scroll {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn-scroll:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+}
+
+/* CONTENEDOR PRINCIPAL CON ESPACIADO GENEROSO */
 .contenedor-principal {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px; /* Separación vertical entre cada sección */
+  max-width: 1100px;
+  margin: 100px auto 120px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
-/* Estilo de las tarjetas (grandes y cómodas) */
-.tarjeta {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.tarjeta-ejercicio {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 }
 
-.tarjeta h2 {
-    color: #2c3e50;
-    margin-top: 0;
-    margin-bottom: 10px;
+.ejercicio-header {
+  padding: 25px 35px;
+  background-color: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.tarjeta p {
-    color: #555;
-    margin-bottom: 20px;
+.badge {
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
-/* Espacio grande para el código de Java */
-.caja-codigo {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    padding: 20px;
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 1.1rem;
-    overflow-x: auto; /* Permite deslizar si el código es muy largo */
+.ejercicio-header h2 {
+  font-size: 1.4rem;
+  color: #0f172a;
 }
 
-.caja-codigo pre {
-    margin: 0;
+.ejercicio-cuerpo {
+  padding: 60px 40px;
+  min-height: 280px;
 }
 
-/* Contenedor del video local */
+/* ======================================================= */
+/* ESTILOS DEL EJERCICIO #01 (FRACCIONARIOS)               */
+/* ======================================================= */
+
+#content-fracciones {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #d31027, #ea384d);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+#information-fracciones {
+  background-color: #0d6efd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#name-fracciones {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#operation-fracciones {
+  background-color: #0d00ff;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.fraccion-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bloque-fraccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.bloque-fraccion input {
+  width: 70px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.bloque-fraccion hr {
+  width: 100%;
+  border: 2px solid white;
+  margin: 8px 0;
+}
+
+#operacion {
+  height: 50px;
+  font-size: 24px;
+  padding: 0 10px;
+  border-radius: 6px;
+}
+
+#result-signo {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+}
+
+#equal {
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 100px;
+}
+
+#equal nav {
+  margin: 2px 0;
+}
+
+#boton1 {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+}
+
+/* ======================================================= */
+/* ESTILOS DEL EJERCICIO #02 (ECUACIONES)                  */
+/* ======================================================= */
+
+.header-ejercicio1 {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(30, 41, 59, 0.8);
+  color: white;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.header-ejercicio1 h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.container-primary {
+  width: 100%;
+  max-width: 500px;
+  min-height: 480px;
+  background-color: rgba(91, 15, 233, 0.85);
+  margin: 0 auto;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.ecuation0 {
+  width: 90%;
+  height: 80px;
+  background-color: rgb(204, 0, 255);
+  margin: 0 auto 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ecuation0 h2 {
+  color: white;
+  margin: 0;
+}
+
+.resultado {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.result {
+  border-radius: 50% !important;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultado1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.result1 {
+  width: 70px;
+  text-align: center;
+  color: white;
+}
+
+.footer1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+/* ESTILOS DEL VIDEO (EJERCICIO #3) */
 .contenedor-video {
-    text-align: center;
-    background-color: #000;
-    border-radius: 6px;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.contenedor-video video {
-    display: block;
-    max-height: 500px; /* Limita un poco la altura máxima si el video es gigante */
-    margin: 0 auto;
-}
-
-/* Pie de página */
-.pie-pagina {
-    text-align: center;
-    margin-top: 40px;
-    color: #777;
+.contenedor-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
