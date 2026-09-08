@@ -1,0 +1,83 @@
+/* Estilos generales y sencillos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Encabezado */
+.encabezado {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.encabezado h1 {
+    color: #007396;
+    margin-bottom: 5px;
+}
+
+/* Contenedor principal que organiza todo hacia abajo */
+.contenedor-principal {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Separación vertical entre cada sección */
+}
+
+/* Estilo de las tarjetas (grandes y cómodas) */
+.tarjeta {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Espacio grande para el código de Java */
+.caja-codigo {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 1.1rem;
+    overflow-x: auto; /* Permite deslizar si el código es muy largo */
+}
+
+.caja-codigo pre {
+    margin: 0;
+}
+
+/* Contenedor del video local */
+.contenedor-video {
+    text-align: center;
+    background-color: #000;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.contenedor-video video {
+    display: block;
+    max-height: 500px; /* Limita un poco la altura máxima si el video es gigante */
+    margin: 0 auto;
+}
+
+/* Pie de página */
+.pie-pagina {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
